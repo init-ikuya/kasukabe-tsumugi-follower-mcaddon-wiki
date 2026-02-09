@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://init-ikuya.github.io/kasukabe-tsumugi-follower-mcaddon-wiki/sitemap.xml

@@ -2,7 +2,20 @@
 
 - `kasukabe-tsumugi-follower-mcaddon` の日本語Wikiサイト
 - VitePress で構築、GitHub Pages でホスティング
-- 対象読者: アドオンのユーザー（遊ぶ人）および開発者
+- **対象読者: ゲームを遊ぶユーザーのみ（開発者向けではない）**
+
+## コンテンツのルール（重要）
+
+- **このWikiはゲームを遊ぶユーザー向けであり、開発者向けではない**
+- アドオン内部のコード構造に関する情報は一切記載しないこと
+  - ディレクトリ構成（`BP/`, `RP/`, `scripts/` など）
+  - ファイル名（`tame.ts`, `combat.ts`, `constants.ts` など）
+  - 変数名・定数名（`AFFECTION_MAX`, `HEALTH_FLEE_THRESHOLD` など）
+  - Dynamic Property キー、タグ名、コンポーネントグループ名、イベント名
+  - § カラーコード（`§a`, `§d` など）
+  - TypeScript / Script API / manifest.json などの技術用語
+- 数値（HP 40、好感度最大100 など）はユーザー向けの説明として記載してOK
+- ゲーム内コマンド（`/summon`, `/give` など）はユーザーが使うものなので記載OK
 
 ## 技術スタック
 
@@ -22,7 +35,6 @@
 index.md                 # トップページ（Hero layout）
 guide/                   # ガイド（はじめに、インストール、遊び方、FAQ）
 features/                # 機能詳細（テイム、好感度、戦闘、装備、追従、ボイス、カレー、UI）
-technical/               # 技術情報（アーキテクチャ、状態遷移、エンティティ、開発ガイド）
 reference/               # リファレンス（ステータス、ボイスライン、コマンド、変更履歴）
 .vitepress/config.ts     # サイト設定（ナビ、サイドバー、検索、日本語UI）
 .vitepress/theme/        # カスタムテーマ（つむぎカラー #ffcd31）

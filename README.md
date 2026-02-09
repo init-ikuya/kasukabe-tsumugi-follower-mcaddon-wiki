@@ -1,6 +1,6 @@
 # 春日部つむぎ フォロワーアドオン Wiki
 
-Minecraft Bedrock Edition 用アドオン「[春日部つむぎ フォロワーアドオン](https://github.com/ikuya-sato/kasukabe-tsumugi-follower-mcaddon)」の Wiki サイトです。
+Minecraft Bedrock Edition 用アドオン「[春日部つむぎ フォロワーアドオン](https://www.curseforge.com/minecraft-bedrock/addons/kasukabe-tsumugi-follower)」の Wiki サイトです。
 
 [VitePress](https://vitepress.dev/) で構築し、GitHub Pages でホスティングしています。
 
@@ -27,7 +27,6 @@ npm run build
 |-----------|------|
 | ガイド | はじめに・インストール・遊び方・FAQ |
 | 機能詳細 | テイム・好感度・戦闘・装備・追従・ボイス・カレー・UI |
-| 技術情報 | アーキテクチャ・状態遷移図・エンティティ定義・開発ガイド |
 | リファレンス | ステータス数値・ボイスライン一覧・コマンド・変更履歴 |
 
 ## クレジット
