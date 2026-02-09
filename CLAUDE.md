@@ -1,0 +1,49 @@
+## プロジェクト概要
+
+- `kasukabe-tsumugi-follower-mcaddon` の日本語Wikiサイト
+- VitePress で構築、GitHub Pages でホスティング
+- 対象読者: アドオンのユーザー（遊ぶ人）および開発者
+
+## 技術スタック
+
+- VitePress + Vue
+- TypeScript（設定ファイル）
+- GitHub Actions（自動デプロイ）
+
+## コマンド
+
+- `npm run dev` — ローカル開発サーバー起動
+- `npm run build` — 本番ビルド
+- `npm run preview` — ビルド結果のプレビュー
+
+## ディレクトリ構成
+
+```
+index.md                 # トップページ（Hero layout）
+guide/                   # ガイド（はじめに、インストール、遊び方、FAQ）
+features/                # 機能詳細（テイム、好感度、戦闘、装備、追従、ボイス、カレー、UI）
+technical/               # 技術情報（アーキテクチャ、状態遷移、エンティティ、開発ガイド）
+reference/               # リファレンス（ステータス、ボイスライン、コマンド、変更履歴）
+.vitepress/config.ts     # サイト設定（ナビ、サイドバー、検索、日本語UI）
+.vitepress/theme/        # カスタムテーマ（つむぎカラー #ffcd31）
+.github/workflows/       # GitHub Pages デプロイ
+public/images/           # 画像アセット置き場
+```
+
+## ページ追加時のルール
+
+- 新しいページを追加したら `.vitepress/config.ts` のサイドバーとナビにも反映すること
+- コンテンツの数値・セリフはアドオン本体のソースコードから正確に引用すること
+  - 定数: `/Users/ikuya.sato/repo/kasukabe-tsumugi-follower-mcaddon/BP/scripts/constants.ts`
+  - セリフ: `/Users/ikuya.sato/repo/kasukabe-tsumugi-follower-mcaddon/BP/scripts/i18n/ja.ts`
+
+## テーマカラー
+
+- メインカラー: `#ffcd31`（つむぎの黄色）
+- サブカラー: `#fffbdb`（薄い黄色）
+- Hero グラデーション: `#ffcd31` → `#ff9a56`
+
+## Git コミットルール
+
+- コミットメッセージに `Co-Authored-By: Claude ...` を含めないこと
+- author / committer に Claude 関連の情報を入れないこと
