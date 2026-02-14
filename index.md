@@ -5,6 +5,9 @@ hero:
   name: '春日部つむぎ フォロワーアドオン'
   text: 'Minecraft BE 用コンパニオンアドオン'
   tagline: VOICEVOXキャラクター「春日部つむぎ」と一緒に冒険しよう！（対応バージョン v1.0.0）
+  image:
+    src: /images/mcaddon-icon.jpg
+    alt: 春日部つむぎ
   actions:
     - theme: brand
       text: はじめに

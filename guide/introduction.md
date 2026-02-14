@@ -4,6 +4,8 @@ description: 春日部つむぎ フォロワーアドオンの概要と主な機
 
 # はじめに
 
+![春日部つむぎ](/images/sitting_tsumugi.png){style="display:block;margin:0 auto 1.5rem;max-width:320px;border-radius:12px"}
+
 ## プロジェクト概要
 
 **春日部つむぎ フォロワーアドオン**は、Minecraft Bedrock Edition（統合版）に、VOICEVOXのキャラクター「春日部つむぎ」を冒険の相棒（フォロワー）として追加するアドオンです。
