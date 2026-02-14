@@ -30,7 +30,10 @@ export default defineConfig({
       { text: '機能', link: '/features/taming' },
       { text: 'リファレンス', link: '/reference/stats' },
       { text: `対応: ${ADDON_VERSION}`, link: '/reference/changelog' },
-      { text: '不具合報告・要望', link: 'https://github.com/init-ikuya/kasukabe-tsumugi-follower-mcaddon-wiki/issues' },
+      {
+        text: '不具合報告・要望',
+        link: 'https://github.com/init-ikuya/kasukabe-tsumugi-follower-mcaddon-wiki/issues',
+      },
     ],
 
     sidebar: {

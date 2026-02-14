@@ -8,7 +8,7 @@ description: 春日部つむぎ フォロワーアドオンで使えるゲーム
 
 ## つむぎを召喚する
 
-```
+```text
 /summon tsumugi:follower
 ```
 
@@ -16,7 +16,7 @@ description: 春日部つむぎ フォロワーアドオンで使えるゲーム
 
 ## カレーを入手する
 
-```
+```text
 /give @s tsumugi:curry
 ```
 
@@ -24,7 +24,7 @@ description: 春日部つむぎ フォロワーアドオンで使えるゲーム
 
 ## つむぎをテレポートさせる
 
-```
+```text
 /tp @e[type=tsumugi:follower] @s
 ```
 
@@ -32,7 +32,7 @@ description: 春日部つむぎ フォロワーアドオンで使えるゲーム
 
 ## つむぎを削除する
 
-```
+```text
 /kill @e[type=tsumugi:follower]
 ```
 
