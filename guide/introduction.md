@@ -24,7 +24,7 @@ description: 春日部つむぎ フォロワーアドオンの概要と主な機
 | 項目 | 要件 |
 |------|------|
 | プラットフォーム | Minecraft Bedrock Edition（統合版） |
-| 対応バージョン | 1.21.0 以降 |
+| 対応バージョン | 26.0 以降 |
 | 必要な実験機能 | Beta APIs（ベータAPI） |
 | 対応デバイス | Windows 10/11, iOS, Android |
 
