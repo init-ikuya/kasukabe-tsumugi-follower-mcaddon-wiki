@@ -6,13 +6,19 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:md": "markdownlint-cli2 '**/*.md' '#node_modules'",
+    "lint": "npm run format:check && npm run lint:md"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "markdownlint-cli2": "^0.20.0",
+    "prettier": "^3.8.1",
     "vitepress": "^1.6.4",
     "vue": "^3.5.28"
   }
