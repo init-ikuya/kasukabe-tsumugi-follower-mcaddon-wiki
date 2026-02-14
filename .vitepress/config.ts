@@ -17,6 +17,14 @@ export default defineConfig({
   },
 
   head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/kasukabe-tsumugi-follower-mcaddon-wiki/favicon.png',
+      },
+    ],
     ['meta', { name: 'theme-color', content: '#ffcd31' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'ja_JP' }],
