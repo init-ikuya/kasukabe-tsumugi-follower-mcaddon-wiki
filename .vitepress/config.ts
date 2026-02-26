@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
  * このWikiが対応しているアドオンのバージョン
  * 更新時はここを変更すれば、ナビバーとトップページに反映される
  */
-export const ADDON_VERSION = 'v1.0.0'
+export const ADDON_VERSION = 'v1.1.0'
 
 export default defineConfig({
   base: '/kasukabe-tsumugi-follower-mcaddon-wiki/',
@@ -67,6 +67,7 @@ export default defineConfig({
             { text: '追従・ナビゲーション', link: '/features/follow' },
             { text: 'ボイスシステム', link: '/features/voice' },
             { text: 'カレーアイテム', link: '/features/curry' },
+            { text: '日記システム', link: '/features/diary' },
             { text: 'UIメニュー', link: '/features/ui-menu' },
           ],
         },
