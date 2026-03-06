@@ -4,7 +4,7 @@ layout: home
 hero:
   name: '春日部つむぎ フォロワーアドオン'
   text: 'Minecraft BE 用コンパニオンアドオン'
-  tagline: VOICEVOXキャラクター「春日部つむぎ」と一緒に冒険しよう！（対応バージョン v1.0.0）
+  tagline: VOICEVOXキャラクター「春日部つむぎ」と一緒に冒険しよう！（対応バージョン v1.2.0）
   image:
     src: /images/mcaddon-icon.jpg
     alt: 春日部つむぎ
@@ -38,7 +38,7 @@ features:
     link: /features/equipment
   - icon: '🎙️'
     title: ボイスシステム
-    details: VOICEVOXで生成された45種類のボイス。状況に応じてリアルに喋る！
+    details: VOICEVOXで生成された74種類のボイス。状況に応じてリアルに喋る！
     link: /features/voice
   - icon: '🗺️'
     title: 追従・ナビゲーション
