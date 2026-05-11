@@ -6,6 +6,9 @@ import { defineConfig } from 'vitepress'
  */
 export const ADDON_VERSION = 'v1.2.0'
 
+const SITE_URL = 'https://init-ikuya.github.io/kasukabe-tsumugi-follower-mcaddon-wiki/'
+const OG_IMAGE_URL = `${SITE_URL}images/mcaddon-icon.jpg`
+
 export default defineConfig({
   base: '/kasukabe-tsumugi-follower-mcaddon-wiki/',
   title: '春日部つむぎ フォロワーアドオン Wiki',
@@ -13,7 +16,7 @@ export default defineConfig({
   lang: 'ja',
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://init-ikuya.github.io/kasukabe-tsumugi-follower-mcaddon-wiki/',
+    hostname: SITE_URL,
   },
 
   head: [
@@ -29,8 +32,24 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'ja_JP' }],
     ['meta', { property: 'og:site_name', content: '春日部つむぎ フォロワーアドオン Wiki' }],
+    ['meta', { property: 'og:image', content: OG_IMAGE_URL }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:image', content: OG_IMAGE_URL }],
   ],
+
+  transformHead({ pageData }) {
+    const head: import('vitepress').HeadConfig[] = []
+    const pageTitle = pageData.frontmatter.title || pageData.title || '春日部つむぎ フォロワーアドオン Wiki'
+    const pageDescription = pageData.frontmatter.description || pageData.description || 'Minecraft Bedrock Edition 用フォロワーアドオンの攻略Wiki'
+
+    head.push(['meta', { property: 'og:title', content: pageTitle }])
+    head.push(['meta', { property: 'og:description', content: pageDescription }])
+
+    const pagePath = pageData.relativePath.replace(/index\.md$/, '').replace(/\.md$/, '')
+    head.push(['meta', { property: 'og:url', content: `${SITE_URL}${pagePath}` }])
+
+    return head
+  },
 
   themeConfig: {
     nav: [
