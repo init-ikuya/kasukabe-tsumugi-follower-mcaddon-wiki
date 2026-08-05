@@ -72,3 +72,29 @@ public/images/           # 画像アセット置き場
 
 - コミットメッセージに `Co-Authored-By: Claude ...` を含めないこと
 - author / committer に Claude 関連の情報を入れないこと
+
+## 過去に踏んだ罠・確定事項（変えないこと）
+
+### デプロイ・ビルド
+
+- `.vitepress/config.ts` の `base: '/kasukabe-tsumugi-follower-mcaddon-wiki/'` は GitHub Pages のサブパス配信に必須。外すとアセットが全部404になる
+- `head` の favicon 等の絶対パスにも base 相当のプレフィックスが含まれている前提なので、base を変えるなら合わせて修正
+- `package.json` は `"type": "module"` 必須（VitePress はESMのみ）。`"commonjs"` にするとビルドが落ちる
+- GitHub Pages のホスティングURLは `https://init-ikuya.github.io/kasukabe-tsumugi-follower-mcaddon-wiki/`（`SITE_URL` として sitemap/OGPで参照）
+
+### 固有識別子（間違いやすい）
+
+- エンティティIDは `tsumugi:follower`。`tsumugi:tsumugi` は誤り（過去に全ページで誤記した実績あり）
+- ダウンロード誘導先は必ず CurseForge: `https://www.curseforge.com/minecraft-bedrock/addons/kasukabe-tsumugi-follower`。GitHub Releases に誘導しない
+- 音声聞こえ範囲は 16 ブロック（`VOICE_HEARING_DISTANCE`）。ページ間で 20 と書かないよう注意（過去に不整合を出した）
+
+### 構造・ページ
+
+- `technical/` ディレクトリは削除済み（開発者向け内容だったため）。ここに新規ページを作らないこと
+- サイドバー・ナビは `guide/` `features/` `reference/` の3系統のみ
+- 上記の「Wikiは遊ぶユーザー向け」ルールに違反した内容が入っていたら削除・書き直し。CLAUDE.md 内での言及は例外としてOK
+
+### バージョン表示
+
+- 対応アドオンバージョンは `.vitepress/config.ts` の `ADDON_VERSION` 定数（現状 `v1.2.0`）を一元管理。ナビバーとトップページで参照される
+- アドオン更新時はここ1箇所を書き換えれば全体に反映される設計
